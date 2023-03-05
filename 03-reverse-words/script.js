@@ -9,7 +9,11 @@
 */
 
 function reverseWords(str) {
-    // Напишите код здесь
+    const arrString = str.split(' ');
+
+    const reverseArr = (arrString.reverse()) 
+    
+    return reverseArr.join(' ');
 }
 
 // Протестируйте решение, вызывая функцию с разными аргументами:

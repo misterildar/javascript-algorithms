@@ -7,8 +7,25 @@
 */
 
 function countZeros(n) {
-    // Напишите код здесь
-}
+
+    let sumZero = 0
+    
+    if (n < 10) {
+        return 0
+    } else {
+        for (let i = 1; i <= n; i += 1) {
+            `${i}`.split('').forEach(function (item) {
+                if (item.includes('0')) {
+                    sumZero +=1
+                }
+            })
+        }
+        
+    }
+    
+    return sumZero
+} 
+    
 
 // Протестируйте решение, вызывая функцию с разными аргументами:
 

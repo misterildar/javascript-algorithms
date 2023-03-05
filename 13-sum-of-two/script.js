@@ -9,7 +9,21 @@
 */
 
 function sumOfTwo(arr, sum) {
-    // Напишите код здесь
+
+    const numberAllObject = {}
+
+    for ( let i = 0; i < arr.length; i ++) {
+       numberAllObject[arr[i]] = i
+    }
+    
+    for(let i = 0; i < arr.length; i ++) {
+        const difference = sum - arr[i]
+
+        if (numberAllObject[difference]) {
+            return true
+        }
+    }
+    return false
 }
 
 // Протестируйте решение, вызывая функцию с разными аргументами:
